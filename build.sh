@@ -15,7 +15,7 @@ cat conf/local.conf | grep "${CONFLINE}" > /dev/null
 local_conf_info=$?
 
 if [ $local_conf_info -ne 0 ];then
-	echo "Append ${CONFLINE} in the local.conf file  "
+	echo "Append ${CONFLINE} in the local.conf file    "
 	echo ${CONFLINE} >> conf/local.conf
 	
 else
