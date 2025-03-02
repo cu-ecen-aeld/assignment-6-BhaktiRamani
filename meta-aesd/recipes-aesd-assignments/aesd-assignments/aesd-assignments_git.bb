@@ -48,7 +48,7 @@ do_install () {
     install -m 0755 ${S}/aesdsocket-start-stop.sh ${D}${sysconfdir}/init.d/aesdsocket-start-stop
 }
 
-# Add post-install handling for first-boot actions if necessary (for services like starting the socket server)
+# Add post-installation step
 pkg_postinst_ontarget:${PN}() {
 	# If you need to handle starting the service after installation, do so here
 	echo "Started the aesdsocket"
